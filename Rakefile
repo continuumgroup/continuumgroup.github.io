@@ -37,7 +37,7 @@ task :deploy, [:message] do |t, args|
   Rake::Task['compile'].invoke
   sh 'git add -A .'
   sh "git commit -m '#{message}'"
-  sh 'git push origin gh-pages --force'
+  sh 'git push origin master'
 end
 
 namespace :watch do
