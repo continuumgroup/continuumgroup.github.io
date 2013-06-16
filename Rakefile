@@ -1,5 +1,13 @@
 task default: 'compile'
 
+desc 'Serve Jekyll locally and automatically'
+task :serve do
+  # if you've come here to remove --safe: don't do it. Github pages runs with
+  # this on by default. As long as we're hosted with them, we need to
+  # generate all plugin content *before* pushing.
+  sh 'jekyll serve --safe --watch'
+end
+
 desc 'Compile all assets (production)'
 multitask compile: ['compile:sass'] do
   puts "Compiled all assets using production settings."
