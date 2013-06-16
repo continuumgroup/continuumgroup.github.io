@@ -1,1 +1,2 @@
 pygments: true
+exclude: [Rakefile, Gemfile, Gemfile.lock, sass, README.md]
