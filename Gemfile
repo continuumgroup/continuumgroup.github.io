@@ -1,6 +1,7 @@
 source 'https://rubygems.org/'
 
 gem 'bourbon', '~> 3.1'
+gem 'neat', '~> 1.3'
 gem 'listen', '~> 0.7'
 
 # jekyll requirements, as specified by github

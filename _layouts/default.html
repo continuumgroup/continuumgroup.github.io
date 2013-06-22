@@ -1,15 +1,39 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
-    <head>
-       <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-       <title>{{ page.title }}</title>
-       <!-- syntax highlighting CSS -->
-       <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
 
-       <!-- Homepage CSS -->
-       <link href="/css/continuum.css" rel="stylesheet" type="text/css" media="screen, projection" />
-    </head>
-    <body>
-        {{ content }}
-    </body>
+    <link rel="stylesheet" href="{{ site.url }}/css/syntax.css">
+    <link rel="stylesheet" href="{{ site.url }}/css/continuum.css">
+  </head>
+  <body>
+    <header role="banner">
+      <a class="home" href="{{ site.url }}">
+        <h1>
+          <img class="logo" src="{{ site.url }}/assets/logo.svg" alt="Continuum Logo">
+          Continuum
+        </h1>
+      </a>
+      <nav role="navigation">
+        <ul>
+          <!--
+            {% for p in site.pages %}
+              {% if p.url != "/index.html" %}
+                <li {% if p.url == page.url %}class="active"{% endif %}>
+                  <a href="{{ p.url }}">{{ p.title }}</a>
+                </li>
+              {% endif %}
+            {% endfor %}
+          -->
+          <li><a href="https://github.com/continuumgroup">Open Source</a></li>
+          <li><a href="https://groups.google.com/forum/#!forum/continuumgroup">Mailing List</a></li>
+          <li><a href="https://www.flickr.com/search/?q=continuumgroup&m=tags">Photographs</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main role="main">
+      {{ content }}
+    </main>
+  </body>
 </html>

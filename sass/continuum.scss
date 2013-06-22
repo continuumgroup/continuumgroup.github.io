@@ -1,3 +1,86 @@
 @import "vendor/bourbon/bourbon";
+@import "vendor/neat/neat";
 @import "vendor/normalize";
+
+$color-background: #F5EFE5;
+$color-black: #333;
+$color-white: #fff;
+$color-link: #86A2D2;
+$size-base: 16px;
+$size-ratio: 1.3333; // Perfect Fourth
+
+a:link, a:visited, a:hover, a:active {
+  color: $color-link;
+}
+
+body {
+  @include outer-container;
+  background: $color-background;
+  color: $color-black;
+  font-size: $size-base;
+}
+
+header[role="banner"] {
+  @include row;
+
+  a {
+    text-decoration: none;
+  }
+
+  .home {
+    @include span-columns(6);
+
+    h1 {
+      font-size: modular-scale($size-base, 4, $size-ratio);
+      margin: 0;
+    }
+
+    .logo {
+      height: modular-scale($size-base, 3, $size-ratio);
+      vertical-align: middle;
+    }
+
+  }
+
+  nav {
+    @include span-columns(6);
+
+    ul {
+      @include clearfix;
+      background: $color-link;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    li {
+      @include span-columns(2 of 6);
+      display: inline-block;
+      padding: 0.5em 0;
+
+      a {
+        color: $color-white;
+        display: block;
+        height: 100%;
+        width: 100%;
+      }
+
+    }
+
+  }
+
+}
+
+main {
+  @include row;
+  background: $color-white;
+  border-radius: 5px;
+  font-family: $georgia;
+  margin: 1em 0;
+  padding: 1em 0;
+
+  section.content-text {
+    padding: 0 1em;
+  }
+
+}
 

@@ -5,7 +5,9 @@
 To set up your dev environment (assuming you have Ruby and the Bundler gem installed)
 
     $ bundle install
-    $ bundle exec bourbon install --path="vendor"
+    $ cd vendor
+    $ bundle exec bourbon install
+    $ bundle exec neat install
 
 ### While Hacking
 
