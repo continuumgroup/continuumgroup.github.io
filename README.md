@@ -29,3 +29,10 @@ To deploy (compile, commit, push to Github Pages)
     $ # Or as a shortcut, include the commit message
     $ bundle exec rake deploy["Updated the foo to be bar-compatible"]
 
+## TODO
+
+[ ] Put photos on Flickr with tag "continuumgroup"
+[ ] Put headshots of group members on homepage
+[ ] CSS for typography in `.content-text` elements
+[ ] More Todos
+
