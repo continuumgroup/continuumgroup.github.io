@@ -13,6 +13,10 @@ $size-base: 18px;
 
 $vertical-grid: golden-ratio($size-base, 1);
 
+/* media queries */
+$larger-than-grid: new-breakpoint(min-width $max-width);
+$smaller-than-grid: new-breakpoint(max-width $max-width);
+
 /* generalities */
 a:link, a:visited, a:hover, a:active {
         color: $color-link;
@@ -87,6 +91,7 @@ nav[role="navigation"] li {
         }
         .story-part {
                 @include row();
+                }
                 .copy {
                         @include span-columns(7);
                         text-align: justify;
@@ -97,6 +102,45 @@ nav[role="navigation"] li {
                         color: $color-grey;
                         &.leading { text-align: right; }
                 }
+        }
+}
+
+/* map section */
+$map-height: $vertical-grid * 14;
+
+.map-hover {
+
+        @include media($larger-than-grid) {
+                height: $map-height; 
+                margin-top: $vertical-grid;
+                margin-bottom: $vertical-grid;
+        }
+
+        p {
+                color: $color-white;
+                @include media($larger-than-grid) {
+                        @include span-columns(5);
+                        padding: $vertical-grid $gutter;
+                        margin-top: $vertical-grid * 5;
+                        background-color: $color-background;
+                }
+        }
+}
+#map {
+        @include media($smaller-than-grid) {
+                display: none;
+        }
+        width: 100%;
+        position: relative;
+        top: -1 * $map-height - $vertical-grid;
+        height: 0;
+        overflow: visible;
+        z-index: -1;
+
+        iframe {
+                width: inherit;
+                height: $map-height;
+                border: none;
         }
 }
 
