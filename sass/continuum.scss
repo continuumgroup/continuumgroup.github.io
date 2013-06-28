@@ -1,86 +1,145 @@
 @import "vendor/bourbon/bourbon";
+@import "grid_settings";
 @import "vendor/neat/neat";
 @import "vendor/normalize";
 
-$color-background: #F5EFE5;
-$color-black: #333;
-$color-white: #fff;
-$color-link: #86A2D2;
-$size-base: 16px;
-$size-ratio: 1.3333; // Perfect Fourth
+$color-background: #3892E3;
+$color-black: #4A4A4A;
+$color-white: #FAFAFA;
+$color-grey: #9B9B9B;
+$color-link: #2652A1;
 
+$size-base: 18px;
+
+$vertical-grid: golden-ratio($size-base, 1);
+
+/* generalities */
 a:link, a:visited, a:hover, a:active {
-  color: $color-link;
+        color: $color-link;
+}
+h1, h2, h3, p { 
+        margin-top: 0;
+        margin-bottom: $vertical-grid; 
+}
+
+h1, h2, h3 {
+        font-weight: normal; 
 }
 
 body {
-  @include outer-container;
-  background: $color-background;
-  color: $color-black;
-  font-size: $size-base;
+        background: $color-background;
+        color: $color-black;
+        font-size: $size-base;
+        line-height: $vertical-grid;
+        font-family: "Vollkorn", Georgia, serif;
 }
 
-header[role="banner"] {
-  @include row;
-
-  a {
-    text-decoration: none;
-  }
-
-  .home {
-    @include span-columns(6);
-
-    h1 {
-      font-size: modular-scale($size-base, 4, $size-ratio);
-      margin: 0;
-    }
-
-    .logo {
-      height: modular-scale($size-base, 3, $size-ratio);
-      vertical-align: middle;
-    }
-
-  }
-
-  nav {
-    @include span-columns(6);
-
-    ul {
-      @include clearfix;
-      background: $color-link;
-      border-radius: 5px;
-      text-align: center;
-    }
-
-    li {
-      @include span-columns(2 of 6);
-      display: inline-block;
-      padding: 0.5em 0;
-
-      a {
-        color: $color-white;
-        display: block;
-        height: 100%;
+section, header {
+        @include outer-container;
+        color: $color-black;
+        font-size: $size-base;
+}
+section { padding-top: $vertical-grid; }
+.wrapper {
+        background-color: $color-white;
         width: 100%;
-      }
-
-    }
-
-  }
-
+        color: $color-white;
+        max-width: none;
 }
 
-main {
-  @include row;
-  background: $color-white;
-  border-radius: 5px;
-  font-family: $georgia;
-  margin: 1em 0;
-  padding: 1em 0;
-
-  section.content-text {
-    padding: 0 1em;
-  }
-
+/* header */
+nav[role="navigation"] ul {
+        @include row(table);
+        margin: none;
+        padding: none;
+        font-family: Helvetica, Arial, sans-serif;
+}
+nav[role="navigation"] li { 
+        @include span-columns(1 of 5); 
+        vertical-align: middle;
+        font-size: 1.3em;
+        a { text-decoration: none; }
 }
 
+/* video box */
+#video {
+        p {
+                @include row();
+                @include span-columns(10);
+
+                color: $color-white;
+                text-align: center;
+                font-size: 2em;
+                line-height: $vertical-grid * 2;
+
+                &.small {
+                        font-size: 1.5em;
+                        line-height: $vertical-grid;
+                }
+        }
+}
+
+/* story section */
+#story {
+        h2 {
+                @include row();
+                @include span-columns(10);
+        }
+        .story-part {
+                @include row();
+                .copy {
+                        @include span-columns(7);
+                        text-align: justify;
+                }
+                .statistic {
+                        @include span-columns(3);
+                        font-size: 1.15em;
+                        color: $color-grey;
+                        &.leading { text-align: right; }
+                }
+        }
+}
+
+/* people section */
+#people {
+        @include row();
+        .person {
+                @include span-columns(2);
+                @include omega(5n);
+        }
+        .nameplate, img {
+                width: 100%;
+                text-align: center;
+        }
+}
+
+/* sponsors section */
+#sponsors-header {
+        @include row();
+        color: $color-white;
+        h2 {
+                @include span-columns(3);
+                font-size: 3em;
+                margin-top: 0.25em;
+        }
+        p { @include span-columns(7); }
+}
+#sponsors {
+        .row {
+                @include row();
+                margin-bottom: $vertical-grid;
+        }
+        .sponsor-5 { @include span-columns(5); }
+        .sponsor-4 { @include span-columns(4); }
+        .sponsor-3 { @include span-columns(3); }
+        img { width: 100%; }
+}
+
+/* legal section */
+#footer-wrapper { margin-top: $vertical-grid; }
+#footer {
+        @include outer-container;
+        @include row();
+}
+#legal, #sitemap { @include span-columns(3); }
+#colophon { @include span-columns(4); }

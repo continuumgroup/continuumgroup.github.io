@@ -1,3 +1,30 @@
 timezone: America/Chicago
 pygments: true
 exclude: [Rakefile, Gemfile, Gemfile.lock, sass, vendor, README.md]
+
+# extra context
+people:
+  - name: Christina Bailey
+    short: christina
+  - name: Suzanne Barnes
+    short: suzanne
+  - name: Aslam Chagani
+    short: aslam
+  - name: Anne Hicks
+    short: anne
+  - name: Brian Hicks
+    short: brian
+  - name: Pierre Kpodar
+    short: pierre
+  - name: Henry Leacock
+    short: henry
+  - name: Jason Long
+    short: jason
+  - name: Kerrick Long
+    short: kerrick
+  - name: Tina "Sweet-T" Pihl
+    short: sweet-t
+  - name: Dwayne Trainer
+    short: dwayne
+  - name: James Ware
+    short: james

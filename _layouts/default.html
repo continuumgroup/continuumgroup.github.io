@@ -1,39 +1,45 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>{{ page.title }}</title>
+<head>
+<meta charset="utf-8">
+<title>{{ page.title }}</title>
 
-    <link rel="stylesheet" href="{{ site.url }}/css/syntax.css">
-    <link rel="stylesheet" href="{{ site.url }}/css/continuum.css">
-  </head>
-  <body>
+<link rel="stylesheet" href="{{ site.url }}/css/syntax.css">
+<link rel="stylesheet" href="{{ site.url }}/css/continuum.css">
+<link href='http://fonts.googleapis.com/css?family=Vollkorn:400italic,400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="wrapper">
     <header role="banner">
-      <a class="home" href="{{ site.url }}">
-        <h1>
-          <img class="logo" src="{{ site.url }}/assets/logo.svg" alt="Continuum Logo">
-          Continuum
-        </h1>
-      </a>
-      <nav role="navigation">
-        <ul>
-          <!--
-            {% for p in site.pages %}
-              {% if p.url != "/index.html" %}
-                <li {% if p.url == page.url %}class="active"{% endif %}>
-                  <a href="{{ p.url }}">{{ p.title }}</a>
-                </li>
-              {% endif %}
-            {% endfor %}
-          -->
-          <li><a href="https://github.com/continuumgroup">Open Source</a></li>
-          <li><a href="https://groups.google.com/forum/#!forum/continuumgroup">Mailing List</a></li>
-          <li><a href="https://www.flickr.com/search/?q=continuumgroup&m=tags">Photographs</a></li>
-        </ul>
-      </nav>
+        <nav role="navigation">
+            <ul>
+                <li><img class="logo" width="64px" height="64px" src="{{ site.url }}/assets/logos/continuum.png" alt="Continuum Logo"></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#story">Our Story</a></li>
+                <li><a href="#people">People</a></li>
+                <li><a href="#sponsors-header">Sponsors</a></li>
+            </ul>
+        </nav>
     </header>
-    <main role="main">
-      {{ content }}
-    </main>
-  </body>
+</div>
+<main role="main">
+{{ content }}
+</main>
+<div class="wrapper" id="footer-wrapper">
+<footer id="footer">
+    <section id="legal">
+        <h2>Legal</h2>
+        <p>Content and imagery &copy; 2013 The Continuum Group, all rights reserved.</p>
+    </section>
+    <section id="colophon">
+        <h2>Colophon</h2>
+        <p>Graciously sponsored by CodePainters, Worldwide Technology, Inc., T-REx, Bullhorn, and Chronicle Coffee. Volkorn Regular, Helvetica. Continuum Site on Github Pages. Continuum App on Github.</p>
+    </section>
+    <section id="sitemap">
+        <h2>Sitemap</h2>
+        <p>Just one page right now, you're looking at it!</p>
+    </section>
+</footer>
+</div>
+</body>
 </html>

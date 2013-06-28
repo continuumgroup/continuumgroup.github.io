@@ -3,21 +3,58 @@ layout: default
 title: Home
 ---
 
-<section class="content-text about">
-  <p>
-    Continuum Group began at the 2013 <a href="http://hackforchange.org/">National
-    Day of Civic Hacking</a> in Saint Louis, Missouri with a simple idea.
-  </p>
-  <blockquote>
-    Empower the homeless to better their lives using technology
-  </blockquote>
-  <p>
-    This idea attracted a group of people at the hackathon to get together for a
-    weekend and start something great. That group, which would eventually become the
-    <strong>Continuum Group</strong>, conceived and built a prototype of an automated
-    telephone system that could enhance the existing shelter reservation systetm in
-    Saint Louis, reducing wait times and staffing costs, while being expanded to
-    shelters nation-wide.
-  </p>
+<section id="video">
+        <p>Continuum is a National Day of Civic Hacking project, dedicated to helping alleviate the problems of homelessness.</p>
+        <p class="small">Here's what we've been up to:</p>
+        <!-- video -->
 </section>
-
+<div class="wrapper">
+        <section id="story">
+                <h2>Our Story</h2>
+                <div class="story-part">
+                        <p class="copy">On June 1, 2013, T-REx in downtown St. Louis, MO hosted a National Day of Civic Hacking and Random Hacks of Kindness event. The goal of this event was to promote the use of technology to enhance our lives as citizens. During that time, 7 of us came together to build the prototype of Continuum.</p>
+                        <p class="statistic">between 600,000 and 2,500,00 Americans are homeless.<br />(fas.org, 2009)</p>
+                </div>
+                <div class="story-part">
+                        <p class="statistic leading">1,370,000 of the homeless population are children under the age of 18.<br />(International Journal of Psychosocial Research, 2008)</p>
+                        <p class="copy">Near the start of the event, we formed a team to build something to help homeless people in St. Louis. As we tried to flesh out what our concept would look like in real life, in walked James Ware. 13 years ago, James was homeless. He challenged us to look beyond our conceptions of homelessness and the shelter system and meet the real and pressing needs of people whose daily life is on the streets.</p>
+                </div>
+                <div class="story-part">
+                        <p class="copy">With James' knowledge, we set out to build a hotline to pair people on the street with beds in shelters. This system will remove the guesswork of finding a safe place to stay the night. Additionally, it will allow shelters to redirect people to an appropriate shelter instead of turning them away, should they run out of room. All this is accomplished in roughly five minutes. This is an improvement on the current coordination system, on which we spent 20 minutes on hold during a test.</p>
+                        <p class="statistic">30 to 45% of homeless people have and use cell phones to communicate with family and employers.<br />(Washington Post, 2009)</p>
+                </div>
+        </section>
+</div>
+<section id="map">
+        <div class="map-hover">
+                <p>We plan on launching in the first quarter of 2014, targeting shelters in the St. Louis metro area. We are a team of developers, designers, and businesspeople, all convinced that we can ease the problem of homelessness in our community.</p>
+        </div>
+</section>
+<div class="wrapper">
+        <section id="people">
+                {% for person in site.people %}
+                <div class="person">
+                        <img src="{{ site.url }}/assets/headshots/{{ person.short }}.png" alt="{{ person.name }}" />
+                        <p class="nameplate">{{ person.name }}</p>
+                </div>
+                {% endfor %}
+        </section>
+</div>
+<section id="sponsors-header">
+        <h2>Sponsors</h2>
+        <p>Thank you to these sponsors for their generous support of Continuum and of the National Civic Day of Hacking</p>
+</section>
+<div class="wrapper">
+        <section id="sponsors">
+                <div class="row">
+                        <img class="sponsor-5" alt="CodePainters" src="{{ site.url }}/assets/logos/codepainters.png" />
+                        <img class="sponsor-5" alt="National Day of Civic Hacking" src="{{ site.url }}/assets/logos/ndoch.png" />
+                </div>
+                <div class="row">
+                        <img class="sponsor-3" alt="Chronicle Coffee" src="{{ site.url }}/assets/logos/chronicle-coffee.png" />
+                        <img class="sponsor-4" alt="T-REx" src="{{ site.url }}/assets/logos/t-rex.png" />
+                        <img class="sponsor-3" alt="World Wide Technology, Inc." src="{{ site.url }}/assets/logos/wwt.png" />
+                </div>
+                <p>We would like to extend a special "Thank You!" to Jon Leek of IDC Projects and Drew Winship of Juristat for organizing the St. Louis National Day of Civic Hacking, and for their counsel during the event.<p>
+        </section>
+</div>
