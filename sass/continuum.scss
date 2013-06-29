@@ -35,7 +35,7 @@ body {
         color: $color-black;
         font-size: $size-base;
         line-height: $vertical-grid;
-        font-family: "Vollkorn", Georgia, serif;
+        font-family: 'Vollkorn', Georgia, serif;
 }
 
 section, header {
@@ -53,16 +53,24 @@ section { padding-top: $vertical-grid; }
 
 /* header */
 nav[role="navigation"] ul {
-        @include row(table);
+        @include row();
         margin: none;
         padding: none;
         font-family: Helvetica, Arial, sans-serif;
 }
 nav[role="navigation"] li { 
         @include span-columns(1 of 5); 
-        vertical-align: middle;
-        font-size: 1.3em;
-        a { text-decoration: none; }
+        text-align: center;
+        font-size: 1.1em;
+
+        a {
+                text-decoration: none; 
+                display: block;
+                padding-top: 10px;
+        }
+        .logo {
+                width: $column * 2 + $gutter;
+        }
 }
 
 /* video box */
@@ -73,13 +81,11 @@ nav[role="navigation"] li {
 
                 color: $color-white;
                 text-align: center;
-                font-size: 2em;
-                line-height: $vertical-grid * 2;
-
-                &.small {
-                        font-size: 1.5em;
-                        line-height: $vertical-grid;
-                }
+                font-size: 1.5em;
+                line-height: $vertical-grid * 1.5;
+        }
+        .embed {
+                margin-bottom: $vertical-grid;
         }
 }
 

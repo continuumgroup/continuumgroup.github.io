@@ -579,7 +579,7 @@ body {
   color: #4a4a4a;
   font-size: 18px;
   line-height: 29.124px;
-  font-family: "Vollkorn", Georgia, serif;
+  font-family: 'Vollkorn', Georgia, serif;
 }
 
 /* line 41, ../sass/continuum.scss */
@@ -618,9 +618,7 @@ section {
 /* line 55, ../sass/continuum.scss */
 nav[role="navigation"] ul {
   *zoom: 1;
-  display: table;
-  width: 100%;
-  table-layout: fixed;
+  display: block;
   margin: none;
   padding: none;
   font-family: Helvetica, Arial, sans-serif;
@@ -637,24 +635,30 @@ nav[role="navigation"] ul:after {
 
 /* line 61, ../sass/continuum.scss */
 nav[role="navigation"] li {
-  display: table-cell;
-  padding-right: 5.26316%;
-  width: 21.05263%;
-  vertical-align: middle;
-  font-size: 1.3em;
-}
-/* line 29, /Users/brian/code/sideprojects/continuumgroup.github.io/vendor/neat/grid/_span-columns.scss */
-nav[role="navigation"] li:last-child {
+  display: block;
+  float: left;
+  margin-right: 5.26316%;
   width: 15.78947%;
-  padding-right: 0;
+  text-align: center;
+  font-size: 1.1em;
 }
-/* line 65, ../sass/continuum.scss */
+/* line 41, /Users/brian/code/sideprojects/continuumgroup.github.io/vendor/neat/grid/_span-columns.scss */
+nav[role="navigation"] li:last-child {
+  margin-right: 0;
+}
+/* line 66, ../sass/continuum.scss */
 nav[role="navigation"] li a {
   text-decoration: none;
+  display: block;
+  padding-top: 10px;
+}
+/* line 71, ../sass/continuum.scss */
+nav[role="navigation"] li .logo {
+  width: 140px;
 }
 
 /* video box */
-/* line 70, ../sass/continuum.scss */
+/* line 78, ../sass/continuum.scss */
 #video p {
   *zoom: 1;
   display: block;
@@ -664,8 +668,8 @@ nav[role="navigation"] li a {
   width: 100%;
   color: #fafafa;
   text-align: center;
-  font-size: 2em;
-  line-height: 58.248px;
+  font-size: 1.5em;
+  line-height: 43.686px;
 }
 /* line 18, /Users/brian/code/sideprojects/continuumgroup.github.io/vendor/bourbon/addons/_clearfix.scss */
 #video p:before, #video p:after {
@@ -680,14 +684,13 @@ nav[role="navigation"] li a {
 #video p:last-child {
   margin-right: 0;
 }
-/* line 79, ../sass/continuum.scss */
-#video p.small {
-  font-size: 1.5em;
-  line-height: 29.124px;
+/* line 87, ../sass/continuum.scss */
+#video .embed {
+  margin-bottom: 29.124px;
 }
 
 /* story section */
-/* line 88, ../sass/continuum.scss */
+/* line 94, ../sass/continuum.scss */
 #story h2 {
   *zoom: 1;
   display: block;
@@ -709,7 +712,7 @@ nav[role="navigation"] li a {
 #story h2:last-child {
   margin-right: 0;
 }
-/* line 92, ../sass/continuum.scss */
+/* line 98, ../sass/continuum.scss */
 #story .story-part {
   *zoom: 1;
   display: block;
@@ -723,7 +726,7 @@ nav[role="navigation"] li a {
 #story .story-part:after {
   clear: both;
 }
-/* line 94, ../sass/continuum.scss */
+/* line 100, ../sass/continuum.scss */
 #story .story-part .copy {
   display: block;
   float: left;
@@ -735,7 +738,7 @@ nav[role="navigation"] li a {
 #story .story-part .copy:last-child {
   margin-right: 0;
 }
-/* line 98, ../sass/continuum.scss */
+/* line 104, ../sass/continuum.scss */
 #story .story-part .statistic {
   display: block;
   float: left;
@@ -748,26 +751,26 @@ nav[role="navigation"] li a {
 #story .story-part .statistic:last-child {
   margin-right: 0;
 }
-/* line 102, ../sass/continuum.scss */
+/* line 108, ../sass/continuum.scss */
 #story .story-part .statistic.leading {
   text-align: right;
 }
 
 /* map section */
 @media screen and (min-width: 960px) {
-  /* line 110, ../sass/continuum.scss */
+  /* line 116, ../sass/continuum.scss */
   .map-hover {
     height: 407.736px;
     margin-top: 29.124px;
     margin-bottom: 29.124px;
   }
 }
-/* line 118, ../sass/continuum.scss */
+/* line 124, ../sass/continuum.scss */
 .map-hover p {
   color: #fafafa;
 }
 @media screen and (min-width: 960px) {
-  /* line 118, ../sass/continuum.scss */
+  /* line 124, ../sass/continuum.scss */
   .map-hover p {
     display: block;
     float: left;
@@ -783,7 +786,7 @@ nav[role="navigation"] li a {
   }
 }
 
-/* line 128, ../sass/continuum.scss */
+/* line 134, ../sass/continuum.scss */
 #map {
   width: 100%;
   position: relative;
@@ -793,12 +796,12 @@ nav[role="navigation"] li a {
   z-index: -1;
 }
 @media screen and (max-width: 960px) {
-  /* line 128, ../sass/continuum.scss */
+  /* line 134, ../sass/continuum.scss */
   #map {
     display: none;
   }
 }
-/* line 139, ../sass/continuum.scss */
+/* line 145, ../sass/continuum.scss */
 #map iframe {
   width: inherit;
   height: 407.736px;
@@ -806,7 +809,7 @@ nav[role="navigation"] li a {
 }
 
 /* people section */
-/* line 147, ../sass/continuum.scss */
+/* line 153, ../sass/continuum.scss */
 #people {
   *zoom: 1;
   display: block;
@@ -820,7 +823,7 @@ nav[role="navigation"] li a {
 #people:after {
   clear: both;
 }
-/* line 149, ../sass/continuum.scss */
+/* line 155, ../sass/continuum.scss */
 #people .person {
   display: block;
   float: left;
@@ -839,14 +842,14 @@ nav[role="navigation"] li a {
 #people .person:nth-child(5n+1) {
   clear: left;
 }
-/* line 153, ../sass/continuum.scss */
+/* line 159, ../sass/continuum.scss */
 #people .nameplate, #people img {
   width: 100%;
   text-align: center;
 }
 
 /* sponsors section */
-/* line 160, ../sass/continuum.scss */
+/* line 166, ../sass/continuum.scss */
 #sponsors-header {
   *zoom: 1;
   display: block;
@@ -861,7 +864,7 @@ nav[role="navigation"] li a {
 #sponsors-header:after {
   clear: both;
 }
-/* line 163, ../sass/continuum.scss */
+/* line 169, ../sass/continuum.scss */
 #sponsors-header h2 {
   display: block;
   float: left;
@@ -874,7 +877,7 @@ nav[role="navigation"] li a {
 #sponsors-header h2:last-child {
   margin-right: 0;
 }
-/* line 168, ../sass/continuum.scss */
+/* line 174, ../sass/continuum.scss */
 #sponsors-header p {
   display: block;
   float: left;
@@ -886,7 +889,7 @@ nav[role="navigation"] li a {
   margin-right: 0;
 }
 
-/* line 171, ../sass/continuum.scss */
+/* line 177, ../sass/continuum.scss */
 #sponsors .row {
   *zoom: 1;
   display: block;
@@ -901,7 +904,7 @@ nav[role="navigation"] li a {
 #sponsors .row:after {
   clear: both;
 }
-/* line 175, ../sass/continuum.scss */
+/* line 181, ../sass/continuum.scss */
 #sponsors .sponsor-5 {
   display: block;
   float: left;
@@ -912,7 +915,7 @@ nav[role="navigation"] li a {
 #sponsors .sponsor-5:last-child {
   margin-right: 0;
 }
-/* line 176, ../sass/continuum.scss */
+/* line 182, ../sass/continuum.scss */
 #sponsors .sponsor-4 {
   display: block;
   float: left;
@@ -923,7 +926,7 @@ nav[role="navigation"] li a {
 #sponsors .sponsor-4:last-child {
   margin-right: 0;
 }
-/* line 177, ../sass/continuum.scss */
+/* line 183, ../sass/continuum.scss */
 #sponsors .sponsor-3 {
   display: block;
   float: left;
@@ -934,18 +937,18 @@ nav[role="navigation"] li a {
 #sponsors .sponsor-3:last-child {
   margin-right: 0;
 }
-/* line 178, ../sass/continuum.scss */
+/* line 184, ../sass/continuum.scss */
 #sponsors img {
   width: 100%;
 }
 
 /* legal section */
-/* line 182, ../sass/continuum.scss */
+/* line 188, ../sass/continuum.scss */
 #footer-wrapper {
   margin-top: 29.124px;
 }
 
-/* line 183, ../sass/continuum.scss */
+/* line 189, ../sass/continuum.scss */
 #footer {
   *zoom: 1;
   max-width: 960px;
@@ -973,7 +976,7 @@ nav[role="navigation"] li a {
   clear: both;
 }
 
-/* line 187, ../sass/continuum.scss */
+/* line 193, ../sass/continuum.scss */
 #legal, #sitemap {
   display: block;
   float: left;
@@ -985,7 +988,7 @@ nav[role="navigation"] li a {
   margin-right: 0;
 }
 
-/* line 188, ../sass/continuum.scss */
+/* line 194, ../sass/continuum.scss */
 #colophon {
   display: block;
   float: left;
