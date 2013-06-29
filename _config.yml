@@ -6,25 +6,37 @@ exclude: [Rakefile, Gemfile, Gemfile.lock, sass, vendor, README.md]
 people:
   - name: Christina Bailey
     short: christina
+    bio: Christina was born and bred in the San Francisco Bay area, she has lived in Utah, Texas, China, Germany, and St. Louis.  She double majored in Linguistics and Chinese, and has edited professional publications in Germany. She has 3 small children (2 of which have special needs), and her personal goal is to learn everything. Christina and her husband have a goal to serve in whatever community/city they live in, and this was a great opportunity to jump in.
   - name: Suzanne Barnes
     short: suzanne
+    bio: Suzanne is a program associate at Arch Grants, an organization dedicated to growth of start-up entrepreneurs in St. Louis. Her graduate education was iin public policy, nonprofit management, and community change, and she’s excited at the opportunity to merge technology and data with solving social issues. 
   - name: Aslam Chagani
     short: aslam
+    bio: Aslam is the founder and President of CodePainters LLC, a technology agency with a focus on web and mobile technology. He is a passionate, experienced engineer and entrepreneur. Born in India, raised in the Congo, he speaks five different languages, loves adventure, and his combination of talents and expertise allow him to create unique and effective solutions to challenging problems. His current research and passion is in the field of Computer Vision and Artificial Intelligence. 
   - name: Anne Hicks
     short: anne
+    bio: Anne is an educator from St. Louis, MO. She is passionate about social concerns in America and helping the food-insecure and homeless. She was born with 8 wisdom teeth, and carries a copy of the constitution in her purse.
   - name: Brian Hicks
     short: brian
+    bio: Brian is a developer and designer. He is originally from Colorado, and is excited to use his talents to help the homeless in the St. Louis area and affect them in a life-changing way. He found that the NDoCH gave him the ability to use his talents to make a real difference. He likes to photography, and to go camping and hiking in his spare time. 
   - name: Pierre Kpodar
     short: pierre
+    bio: Born and raised in Togo, Pierre graduated in the US in computer science. He buys and distributes technology, and is currently developing an expertise in Cryptography. He enjoys travelling and helping solve social problems here at Continuum. 
   - name: Henry Leacock
     short: henry
+    bio: Henry is a software developer at FoodEssentials. Henry is a native of St. Louis and is passionate about making it a better place. Partnered with his drive to innovate using technology, he finds NDoCH is a great way to discover opportunities for positive change in a tangible way. Henry is also involved in a pinball league in the St. Louis area. 
   - name: Jason Long
     short: jason
+    bio: Jason is an upcoming filmmaker. He cares about what Continuum is doing because he believes in making a difference. He enjoys making film and spending quality time with family and friends.
   - name: Kerrick Long
     short: kerrick
+    bio: Kerrick has four years of experience in a combination of back- and front-end web development, an eye for user interface design, and a passion for learning, he bridged the gap between design and programming. Kerrick also strives to make the web usable and accessible to all with open source, web standards, and good user experience.
   - name: Tina "Sweet-T" Pihl
     short: sweet-t
+    bio: tinA is a social entrepreneur and relationship broker.  tinA studied how to effectively create public and private partnerships through corporate social responsibility at MIT.  At Yale, she created SELF, an idea for low-income housing providers to look beyond building houses for clients and provide self-sufficiency services.  tinA also had the opportunity to spearheaded a post-natural disaster project in Honduras, found, and co-found other projects. Sweet-T, as she is called, was also an Olympic contender in freestyle wrestling in 2004. Sweet-T does everything with a passion and perseverance.  She dedicates herself to empowering others to live their dream and bringing together collaborations.
   - name: Dwayne Trainer
     short: dwayne
-  - name: James Ware
+    bio: Dwayne  is a St. Louis native, hardworking entrepreneur, and advocate for sustainable social and environmental change. Innovation drives Mr. Trainer, and the projects he is involved in. He believes in helping those that cannot help themselves by leveling the playing field, sharing information, and enhancing critical thinking skills.
+  - name: James Ware Jr.
     short: james
+    bio: James E. Ware Jr.  was homeless off and on for a few years and liked the concept of Continuum. He became aware of the National Day of Civic Hacking while working at Macy’s. He was a substance abuser, he has been clean for 13 years.  He hopes that the Continuum group can help do something positive to end homelessness in St. Louis and beyond.

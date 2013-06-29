@@ -152,10 +152,14 @@ $map-height: $vertical-grid * 14;
 
 /* people section */
 #people {
-        @include row();
         .person {
+                @include row();
+        }
+        .headshot {
                 @include span-columns(2);
-                @include omega(5n);
+        }
+        .bio {
+                @include span-columns(8);
         }
         .nameplate, img {
                 width: 100%;

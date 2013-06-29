@@ -34,8 +34,11 @@ title: Continuum
         <section id="people">
                 {% for person in site.people %}
                 <div class="person">
-                        <img src="{{ site.url }}/assets/headshots/{{ person.short }}.png" alt="{{ person.name }}" />
-                        <p class="nameplate">{{ person.name }}</p>
+                        <div class="headshot">
+                                <img src="{{ site.url }}/assets/headshots/{{ person.short }}.png" alt="{{ person.name }}" />
+                                <p class="nameplate">{{ person.name }}</p>
+                        </div>
+                        <p class="bio">{{ person.bio }}</p>
                 </div>
                 {% endfor %}
         </section>
