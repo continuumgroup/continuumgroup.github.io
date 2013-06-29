@@ -91,7 +91,6 @@ nav[role="navigation"] li {
         }
         .story-part {
                 @include row();
-                }
                 .copy {
                         @include span-columns(7);
                         text-align: justify;
