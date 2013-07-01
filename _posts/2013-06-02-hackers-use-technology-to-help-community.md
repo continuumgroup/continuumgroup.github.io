@@ -13,4 +13,4 @@ From [KDSK](http://www.ksdk.com):
 > projects to help the community.  And organizers say the weekend's turnout is
 > proof that technology is becoming a bright spot for the future of St. Louis.
 
-[Read the Full Story](http://www.ksdk.com/news/article/383394/3/Hackers-use-technology-to-help-community)
+[Read the Full Story on KSDK.com](http://www.ksdk.com/news/article/383394/3/Hackers-use-technology-to-help-community)
