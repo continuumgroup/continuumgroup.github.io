@@ -215,4 +215,8 @@ nav.pagination {
 }
 article blockquote {
         color: lighten($color-black, 20%);
+        margin-bottom: $vertical-grid;
+}
+article footer {
+        margin-bottom: $vertical-grid;
 }

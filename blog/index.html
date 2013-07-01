@@ -9,6 +9,9 @@ title: Continuum - Blog
         <article>
             <header><h2><a rel="canonical" href="{{ post.url }}">{{ post.title }}</a></h2></header>
             {{ post.content }}
+            <footer>
+                <small>Posted at {{ post.date }}{% if post.author %} by {{ post.author }}{% endif %}</small>
+            </footer>
         </article>
     </section>
 </div>
