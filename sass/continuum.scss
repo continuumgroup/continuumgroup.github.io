@@ -172,11 +172,11 @@ $map-height: $vertical-grid * 14;
         @include row();
         color: $color-white;
         h2 {
-                @include span-columns(3);
+                @include span-columns(4);
                 font-size: 3em;
                 margin-top: 0.25em;
         }
-        p { @include span-columns(7); }
+        p { @include span-columns(6); }
 }
 #sponsors {
         .row {
