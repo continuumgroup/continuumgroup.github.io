@@ -1,5 +1,6 @@
 timezone: America/Chicago
 pygments: true
+permalink: "/blog/:year/:month/:day/:title.html"
 exclude: [Rakefile, Gemfile, Gemfile.lock, sass, vendor, README.md]
 
 # extra context
