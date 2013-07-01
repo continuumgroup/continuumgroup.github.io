@@ -24,4 +24,4 @@ From [Examiner](http://www.examiner.com/):
 > program, the team also includes members with experience on building out a
 > social program.”
 
-[Read the Full Article](http://www.examiner.com/article/st-louis-female-civic-hackers-contribute-to-winning-project)
+[Read the Full Story on examiner.com](http://www.examiner.com/article/st-louis-female-civic-hackers-contribute-to-winning-project)
