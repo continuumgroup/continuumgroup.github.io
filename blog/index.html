@@ -1,0 +1,23 @@
+---
+layout: default
+title: Continuum - Blog
+---
+
+<nav class="pagination">
+    <p>
+    {% if paginator.previous_page %}
+    <a href="/blog/{% if paginator.previous_page != 1 %}{{ paginator.previous_page }}/{% endif %}" rel="previous">Previous</a>
+    {% endif %}
+    {% for count in (1..paginator.total_pages) %}
+    {% if count == paginator.page %}
+    <span class="active-page">{{ count }}</a>
+    {% else %}
+    <a href="/blog/{% if count != 1 %}{{ count }}/{% endif %}">{{ count }}</a>
+    {% endif %}
+    {% endfor %}
+    {% if paginator.next_page %}
+    <a href="/blog/{{ paginator.next_page }}" rel="next">Next</a>
+    {% endif %}
+    </p>
+</nav>
+{{ paginator }}
