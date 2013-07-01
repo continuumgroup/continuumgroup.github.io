@@ -47,8 +47,12 @@ section { padding-top: $vertical-grid; }
 .wrapper {
         background-color: $color-white;
         width: 100%;
-        color: $color-white;
         max-width: none;
+
+        &.blogpost {
+                margin-top: $vertical-grid;
+                margin-bottom: $vertical-grid;
+        }
 }
 
 /* header */
@@ -197,3 +201,18 @@ $map-height: $vertical-grid * 14;
 }
 #legal, #sitemap { @include span-columns(3); }
 #colophon { @include span-columns(4); }
+
+/* blog stuff */
+nav.pagination {
+        min-height: $vertical-grid;
+        text-align: center;
+
+        a { color: darken($color-white, 2%); }
+        & > p { 
+                color: $color-white; 
+                margin-bottom: 0;
+        }
+}
+article blockquote {
+        color: lighten($color-black, 20%);
+}

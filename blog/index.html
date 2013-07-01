@@ -4,10 +4,14 @@ title: Continuum - Blog
 ---
 
 {% for post in paginator.posts %}
-<article>
-    <header><h2><a href="{{ post.url }}">{{ post.title }}</a></h2></header>
-    {{ post.content }}
-</article>
+<div class="wrapper blogpost">
+    <section>
+        <article>
+            <header><h2><a rel="canonical" href="{{ post.url }}">{{ post.title }}</a></h2></header>
+            {{ post.content }}
+        </article>
+    </section>
+</div>
 {% endfor %}
 
 <nav class="pagination">
@@ -27,4 +31,3 @@ title: Continuum - Blog
     {% endif %}
     </p>
 </nav>
-{{ paginator }}
