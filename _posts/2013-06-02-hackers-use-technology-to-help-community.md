@@ -3,6 +3,7 @@ title: '"Hackers" use technology to help community'
 date: 2013-06-02
 layout: post
 category: press
+author: Brian Hicks
 ---
 From [KDSK](http://www.ksdk.com):
 

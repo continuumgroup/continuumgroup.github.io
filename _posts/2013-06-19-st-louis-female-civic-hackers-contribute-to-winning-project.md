@@ -3,6 +3,7 @@ title: "St. Louis' Female Civic Hackers Contribute to Winning Project"
 date: 2013-06-19
 layout: post
 category: press
+author: Brian Hicks
 ---
 From [Examiner](http://www.examiner.com/):
 

@@ -3,6 +3,7 @@ title: Civic-Minded Hacking
 date: 2013-06-11
 layout: post
 category: press
+author: Brian Hicks
 ---
 From [IEEE Spectrum](http://spectrum.ieee.org/):
 

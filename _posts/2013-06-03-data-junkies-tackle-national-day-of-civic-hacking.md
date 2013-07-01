@@ -3,6 +3,7 @@ title: "'Data junkies' tackle National Day of Civic Hacking"
 date: 2013-06-03
 layout: post
 category: press
+author: Brian Hicks
 ---
 From the [St. Louis Business Journal](http://www.bizjournals.com/stlouis/):
 
