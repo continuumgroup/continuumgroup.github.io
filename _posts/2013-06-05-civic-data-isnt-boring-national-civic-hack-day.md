@@ -1,7 +1,7 @@
 ---
 title: "Civic data isn't boring: National Civic Hack Day"
 date: 2013-06-05
-layout: default
+layout: post
 category: press
 ---
 From Amy Gahran of the [Knight Digital Media Center](http://www.knightdigitalmediacenter.org/):

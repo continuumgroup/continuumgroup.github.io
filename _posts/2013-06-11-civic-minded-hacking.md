@@ -1,7 +1,7 @@
 ---
 title: Civic-Minded Hacking
 date: 2013-06-11
-layout: default
+layout: post
 category: press
 ---
 From [IEEE Spectrum](http://spectrum.ieee.org/):

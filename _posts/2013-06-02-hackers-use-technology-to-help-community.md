@@ -1,7 +1,7 @@
 ---
 title: '"Hackers" use technology to help community'
 date: 2013-06-02
-layout: default
+layout: post
 category: press
 ---
 From [KDSK](http://www.ksdk.com):
