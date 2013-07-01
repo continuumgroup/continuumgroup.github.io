@@ -15,4 +15,4 @@ From Amy Gahran of the [Knight Digital Media Center](http://www.knightdigitalmed
 > his shift to explain to the hackers the process a homeless person in that
 > city usually goes through to find a shelter spot.
 
-[Read the Full Article](http://www.knightdigitalmediacenter.org/blogs/agahran/2013/06/civic-data-isnt-boring-national-civic-hack-day)
+[Read the Full Story on the Knight Digital Media Center Blog](http://www.knightdigitalmediacenter.org/blogs/agahran/2013/06/civic-data-isnt-boring-national-civic-hack-day)
