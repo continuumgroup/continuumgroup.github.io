@@ -1,7 +1,8 @@
-title: St. Louis' Female Civic Hackers Contribute to Winning Project
+---
+title: "St. Louis' Female Civic Hackers Contribute to Winning Project"
 date: 2013-06-19
 layout: default
-categories: press
+category: press
 ---
 From [Examiner](http://www.examiner.com/):
 
