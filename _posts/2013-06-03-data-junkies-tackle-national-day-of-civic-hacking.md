@@ -17,4 +17,4 @@ From the [St. Louis Business Journal](http://www.bizjournals.com/stlouis/):
 > he walked the team through the process a homeless person in the city of St.
 > Louis usually goes through to find a spot at a shelter for the night.
 
-[The Full Story](http://www.bizjournals.com/stlouis/blog/BizNext/2013/06/data-junkies-tackle-national-day-of.html?page=all)
+[The Full Story in the St. Louis Business Journal](http://www.bizjournals.com/stlouis/blog/BizNext/2013/06/data-junkies-tackle-national-day-of.html?page=all)
