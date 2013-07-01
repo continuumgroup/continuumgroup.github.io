@@ -1,7 +1,8 @@
-title: 'Data junkies' tackle National Day of Civic Hacking
+---
+title: "'Data junkies' tackle National Day of Civic Hacking"
 date: 2013-06-03
 layout: default
-categories: press
+category: press
 ---
 From the [St. Louis Business Journal](http://www.bizjournals.com/stlouis/):
 
