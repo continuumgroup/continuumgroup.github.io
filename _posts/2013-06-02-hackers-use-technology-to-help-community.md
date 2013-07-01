@@ -1,4 +1,3 @@
----
 title: "Hackers" use technology to help community
 date: 2013-06-02
 layout: default

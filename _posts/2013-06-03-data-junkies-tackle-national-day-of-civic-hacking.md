@@ -1,4 +1,3 @@
----
 title: 'Data junkies' tackle National Day of Civic Hacking
 date: 2013-06-03
 layout: default
