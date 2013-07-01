@@ -63,7 +63,7 @@ nav[role="navigation"] ul {
         font-family: Helvetica, Arial, sans-serif;
 }
 nav[role="navigation"] li { 
-        @include span-columns(1 of 5); 
+        @include span-columns(1 of 6); 
         text-align: center;
 
         a {
