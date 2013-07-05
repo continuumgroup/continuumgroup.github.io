@@ -10,47 +10,57 @@
 </head>
 <body>
 <div class="wrapper">
-    <header role="banner">
-        <nav role="navigation">
-            <ul>
-                <li><img class="logo" src="{{ site.url }}/assets/logos/continuum.png" alt="Continuum Logo"></li>
-                <li><a href="/">Home</a></li>
-                <li><a href="/#story">Our Story</a></li>
-                <li><a href="/#people">People</a></li>
-                <li><a href="/#sponsors-header">Sponsors</a></li>
-                <li><a href="/blog/">Blog</a></li>
-            </ul>
-        </nav>
-    </header>
+        <header role="banner">
+                <nav role="navigation">
+                        <ul>
+                                <li><img class="logo" src="{{ site.url }}/assets/logos/continuum.png" alt="Continuum Logo"></li>
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/#story">Our Story</a></li>
+                                <li><a href="/#people">People</a></li>
+                                <li><a href="/#sponsors-header">Sponsors</a></li>
+                                <li><a href="/blog/">Blog</a></li>
+                        </ul>
+                </nav>
+        </header>
 </div>
 <main role="main">
 {{ content }}
 </main>
 <div class="wrapper" id="footer-wrapper">
-<footer id="footer">
-    <section id="legal">
-        <h2>Legal</h2>
-        <p>Content and imagery &copy; 2013 The Continuum Group, all rights reserved.</p>
-    </section>
-    <section id="colophon">
-        <h2>Colophon</h2>
-        <p>Graciously sponsored by CodePainters, the National Day of Civic Hacking, Chronicle Coffee, T-REx, and Worldwide Technology, Inc. Vollkorn Regular, Helvetica. Continuum Site on Github Pages. Continuum App on Github.</p>
-    </section>
-    <section id="sitemap">
-        <h2>Sitemap</h2>
-        <ul>
-            <li>
-            <a href="/">Home</a>
-            <ul>
-                <li><a href="/#story">Our Story</a></li>
-                <li><a href="/#people">People</a></li>
-                <li><a href="/#sponsors-header">Sponsors</a></li>
-            </ul>
-            </li>
-            <li><a href="/blog/">Blog</a></li>
-        </ul>
-    </section>
-</footer>
+        <footer id="footer">
+                <section id="legal">
+                        <h2>Legal</h2>
+                        <p>Content and imagery &copy; 2013 The Continuum Group, all rights reserved.</p>
+                </section>
+                <section id="colophon">
+                        <h2>Colophon</h2>
+                        <p>Graciously sponsored by CodePainters, the National Day of Civic Hacking, Chronicle Coffee, T-REx, and Worldwide Technology, Inc. Vollkorn Regular, Helvetica. Continuum Site on Github Pages. Continuum App on Github.</p>
+                </section>
+                <section id="sitemap">
+                        <h2>Sitemap</h2>
+                        <ul>
+                                <li>
+                                <a href="/">Home</a>
+                                <ul>
+                                        <li><a href="/#story">Our Story</a></li>
+                                        <li><a href="/#people">People</a></li>
+                                        <li><a href="/#sponsors-header">Sponsors</a></li>
+                                </ul>
+                                </li>
+                                <li><a href="/blog/">Blog</a></li>
+                        </ul>
+                </section>
+        </footer>
 </div>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-42202041-1', 'continuumgroup.org');
+ga('send', 'pageview');
+
+</script>
 </body>
 </html>
